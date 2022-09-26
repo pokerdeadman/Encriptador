@@ -1,4 +1,4 @@
-<h1># Encriptador<h1>
+<h1># Encriptador</h1>
 Una aplicación que encripta textos, challenge one oracle next education 
 <p>Las "llaves" de encriptación que utilizaremos son las siguientes:</p>
 
