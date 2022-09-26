@@ -1,0 +1,282 @@
+
+body{
+ background:url(bg.jpg);
+ min-height: 100vh;
+ min-width: 100%;
+}
+
+header{
+  position:absolute;
+  background-image: linear-gradient(
+        to right,
+        orangered,
+        orange,
+        gold,
+        lightgreen,
+        cyan,
+        dodgerblue,
+        mediumpurple,
+        hotpink,
+        orangered);
+  padding: 10px 0px;
+  width:100%;
+}
+
+main{
+    position:absolute;
+    top:140px;
+}
+
+.vector{
+  /* Vector */
+  width:950px;
+  position:relative;
+  margin:1em 1em 1em;
+  padding:5px;
+  top:5px;
+  left:20px;
+  right:10px;
+  bottom:10px;
+}
+
+
+.bloque{
+    position:absolute;
+    width:700px;
+    height: 944px;
+    margin:10px;
+    padding: 10px 30px 10px 100px;
+ }
+
+ .entrada{
+    position: absolute;
+    width:600px;
+    height: 944px;
+ }
+
+ .entrada textarea{
+    display: block;
+    width:550px;
+    height:500px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color:white;
+    border: none;
+    background: transparent;
+    resize: none;
+ }
+ .imagen_e{
+  width:300px;
+  height:20px;
+  padding:3px;
+ }
+ .exclamation{
+     margin:3px 4px;
+     width:7px;
+     height:7px;
+     background: transparent;
+     margin:1px;
+     padding:1px;
+ }
+
+ .entrada p{
+   color:white;
+   font-size: 13px;
+   font-weight: bold;
+ }
+
+ #message::placeholder{
+    color:white;
+    text-align: center;
+ }
+
+ .box-button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding:20px;
+    gap:20px;
+    width:600px;
+    height:200px;
+    margin:10px;
+ }
+
+.botones{
+    margin:10px  50px 10px;
+    border:none;
+    box-shadow:inset 0px 1px 0px 0px #fff6af;
+    background-image: linear-gradient(
+        to right,
+        orangered,
+        orange,
+        gold,
+        lightgreen,
+        cyan,
+        dodgerblue,
+        mediumpurple,
+        hotpink,
+        orangered);
+	background-color:#ffec64;
+    border-radius: 20px;
+    width:150px;
+    height:50px;
+    font-family:'Franklin Gothic Medium';
+}
+
+.botones:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+}
+
+.botones::after{
+    content:" >>";
+    opacity: 0;
+    background: transparent;
+}
+
+
+.botones:hover::after{
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+
+.botones:active{
+    font-size: 13px;
+    transform: scale(0.9);
+    transition-duration:0.4s;
+}
+
+
+.box{
+    width: 500px;
+    height:944px;
+    position:absolute;
+    left:1000px;
+    border: black;
+    margin:10px;
+      /*Arriba | Derecha |Abajo|Izquierda*/
+}
+
+
+#pitou{
+    width:200px;
+    height:350px;
+    display:block;
+    margin:auto;
+}
+
+
+.textos{
+    width: 336px;
+    height: 58px; 
+    padding:5px; 
+    margin: auto;
+}
+
+
+.texto-1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+    
+    text-align: center;
+
+    color:white;
+
+}
+
+.texto-2{ 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+/* or 24px */
+
+    text-align: center;
+    color: white;
+}
+
+.resultado{
+    position:absolute;
+    top:0px;
+    width: 500px;
+    height: 410px;
+}
+
+.resultado textarea{
+    margin:auto 20px;
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    background: transparent;
+    border: none;
+    resize: none;
+}
+
+#result{
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    color:white;
+}
+
+
+.boton-copiar{
+    position: absolute;
+    margin:auto  130px auto;
+    width: 200px;
+}
+
+footer p{
+    position: absolute;
+    margin:40px 40%;
+}
+
+
+ @media screen and (max-width:550px){
+    header{
+     width: auto;
+    }
+    .bloque{
+        left: 140px;
+    }
+    
+    .box{
+        top: 900px;
+        left: 250px;
+    }
+ 
+ }
+
+ @media screen and (min-width:551px) and (max-width:920px) {
+    header{
+        width:initial;
+       }
+    .bloque{
+        left: 120px;
+    }
+    
+    .box{
+        top: 900px;
+        left: 250px;
+    }
+ }
+
+ @media screen and (min-width:930px) and (max-width:1280px) {
+    header{
+        width: calc(100% + 450px);
+    }
+ }
+
+
+
+
+ 
